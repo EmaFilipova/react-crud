@@ -32,7 +32,7 @@ export default function HomePage() {
 
   async function fetchUsers() {
     const response = await fetch(
-      "https://https://github.com/EmaFilipova/fetch/actions/runs/10745894306"
+      "https://https://https://raw.githubusercontent.com/EmaFilipova/fetch/main/fetch.json"
     ); // fetch the data from the API
     const data = await response.json(); // parse the data from string to javascript array
     localStorage.setItem("users", JSON.stringify(data)); // save the data to local storage
