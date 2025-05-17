@@ -1,0 +1,75 @@
+
+/* Segmented Control Styles */
+.segmented-control {
+    display: inline-flex;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    padding: 1px;
+    gap: 0;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Animation for the selected state */
+  @keyframes segmentedControlSelect {
+    from {
+      opacity: 0.8;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Smooth transition for toggle items */
+  [data-radix-collection-item] {
+    position: relative;
+    transition: all 0.2s ease-out;
+  }
+  
+  [data-state=on] {
+    animation: segmentedControlSelect 0.15s ease-out;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 4px 0px rgba(0, 0, 0, 0.05) inset;
+    z-index: 1;
+  }
+  
+  /* Responsive scrolling for many options */
+  .segmented-control-scrollable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    display: flex;
+    padding: 1px;
+    align-items: center;
+  }
+  
+  .segmented-control-scrollable::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  
+  /* Ensure equal width segments in grid mode */
+  .segmented-control-equal > * {
+    flex: 1 1 0%;
+  }
+  
+  /* Full width segmented control */
+  .segmented-control-fullwidth {
+    width: 100%;
+    display: flex;
+  }
+  
+  .segmented-control-fullwidth > * {
+    flex: 1 1 0%;
+  }
+  
+  /* New blue style that matches the design image */
+  [data-state=on].segment-blue {
+    background-color: #0552B5;
+    color: white;
+  }
+  
+  /* Hover effects for non-selected items */
+  [data-state=off]:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }

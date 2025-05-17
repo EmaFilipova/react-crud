@@ -1,0 +1,36 @@
+
+/* Custom Toast Styles */
+/* Sonner Toast */
+.custom-toast {
+    display: flex !important;
+    width: 360px !important;
+    padding: 32px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+    border-radius: 2px !important;
+    background: #3B3B3B !important;
+    color: #FFFFFF !important;
+  }
+  
+  .success-toast {
+    border: 2px solid #DE911D !important;
+  }
+  
+  /* Radix Toast */
+  .toast-component {
+    width: 360px !important;
+    padding: 32px !important;
+    border-radius: 2px !important;
+    background: #3B3B3B !important;
+    color: white !important;
+  }
+  
+  .toast-component.success {
+    border: 2px solid #DE911D !important;
+  }
+  
+  .toast-component .flex {
+    gap: 32px;
+  }
+  

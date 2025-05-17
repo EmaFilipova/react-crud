@@ -1,0 +1,28 @@
+
+/* Custom accordion styles */
+.custom-accordion-item {
+    width: 592px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--Colors-Border-light);
+    background: var(--Colors-Content-light);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08) inset;
+    flex-shrink: 0;
+  }
+  
+  /* Expanded state styles */
+  .accordion-expanded {
+    border: 1px solid #03449E;
+    background: #E6F0FF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08) inset;
+  }
+  
+  /* Chevron icon color for expanded state */
+  .accordion-expanded .chevron-icon {
+    color: #03449E;
+  }
+  
